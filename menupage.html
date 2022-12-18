@@ -1,111 +1,134 @@
 <!DOCTYPE html>
 <html>
 <title>Menu page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1"  max-width: 50%;>
+<meta name="viewport" content="width=device-width, initial-scale=1" max-width: 50%;>
 
 <style>
     body {
 
-                        background-image: url(images/background\ image.png);  
-                        background-color: #cccccc;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        height: auto;
-                        max-width: 100%;
-                        border: none;
-                        
-                    }
-     .button {
-                        margin-left: 30%;
-                        margin-top: 200px;
-                        font-size: 20px;
-                        padding: 10px 30px;
-                        border-radius: 50px;
-                        border-width: 1px;
-     }
-           
+        background-image: url(images/background\ image.png);
+        background-color: #cccccc;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        max-width: 100%;
+        border: none;
+
+    }
+
     .button {
-                        
-                        margin-right: 60%;
-                        margin-left: 60%;
-                        margin-top: 20px;
-                        background-color: #C1CEB2;
-                        font-size: 20px;
-                        padding: 5px 10px;
-                        border-radius: 50px;
-                        border-width: 3px;
-                        text-align: center;
-                        position: fixed;
-                        white-space:  20px;;
-                        
+        background-color: #C1CEB2;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 50px;
+        border-width: 3px;
+        text-align: center;
+        position: static;
+        white-space: 20px;
+        margin-left: 1%;
+        border-color: none;
+        border-style: none;
 
     }
+    .button:last-child{
+        margin-right:100px;
+    }
+
     .h1 {
-                        margin-left: 20%;
+        margin-left: 20%;
 
     }
 
-    .flexcontainer {
-                    
-                         
-                         display: flex;
-                         flex-direction: column-reverse;
-                         flex-wrap: wrap;
-                         align-content: center;
-                         justify-content: space-evenly;
-                         align-items: center
-}
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
 
+    .flex-item {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10px;
+        width: 120px;
+    }
 
-    
+    .flex-item .name {
+        text-align: center;
+    }
 
+    .flex-container .flex-item img {
+        width: 100px;
+        height: 100px;
+    }
 
+    .center {
+        width: 100%;
+        align-items: center;
+    }
 
+    .flex-button{
+        display: flex;
+        width:100%;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    .title{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
 </style>
 
 <body>
-    
 
-    <h1>I arrive in Aarhus on 25.12.2022</h1>
 
-    <button class="button"> Change destination </button> 
-    <button class="button"> Change date </button> 
-
-<div class="flex-container">
-    <div class="share">
-         <p class="name">Share your travel plan</p>
-         <img src="images/send.png" width="60px" height="60px">
+    <h1 class="title">I arrive in Aarhus on 25.12.2022</h1>
+    <div class="flex-button">
+        <button class="button"> Change destination </button>
+        <button class="button"> Change date </button>
     </div>
-    <div class="places">
-        <p class="name">Places to visit</p>
-        <img src="images/tourism.png" width="60px" height="60px">
+    <div class="center">
+        <div class="flex-container">
+            <div class="flex-item">
+                <p class="name">Share your travel plan</p>
+                <img src="images/send.png">
+            </div>
+            <div class="flex-item">
+                <p class="name">Places to<br> visit</p>
+                <img src="images/tourism.png">
+            </div>
+            <div class="flex-item">
+                <p class="name">Tips and<br> tricks</p>
+                <img src="images/lightbulb.png">
+            </div>
+            <div class="flex-item">
+                <p class="name">Cultural awareness</p>
+                <img src="images/self-awareness.png">
+            </div>
+
+            <div class="flex-item">
+                <p class="name">Contact other solo travelers</p>
+                <img src="images/partnership.png">
+            </div>
+
+            <div class="flex-item">
+                <p class="name">Overview of the city</p>
+                <img src="images/search-interface-symbol.png">
+            </div>
+        </div>
     </div>
-    <div class="tips">
-        <p class="name">Tips and tricks</p>
-        <img src="images/lightbulb.png" width="60px" height="60px">
-   </div>
-   <div class="awareness">
-    <p class="name">Cultural awareness</p>
-    <img src="images/self-awareness.png" width="60px" height="60px">
-    </div>
 
-    <div class="contact">
-        <p class="name">Contact other solo travelers</p>
-        <img src="images/partnership.png" width="60px" height="60px">
-   </div>
 
-   <div class="overview">
-    <p class="name">Overview of the city</p>
-    <img src="images/search-interface-symbol.png" width="60px" height="60px">
-   </div>
-</div>
 
-    
 
-    
 
-    
-        
+
+
 
 
 
