@@ -16,10 +16,10 @@
 
     }
 
-    .button {
+    .buttonlike {
         background-color: #C1CEB2;
         font-size: 20px;
-        padding: 5px 10px;
+        padding: 0px 10px;
         border-radius: 50px;
         border-width: 3px;
         text-align: center;
@@ -28,10 +28,15 @@
         margin-left: 1%;
         border-color: none;
         border-style: none;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        width: fit-content;
 
     }
-    .button:last-child{
-        margin-right:100px;
+
+    .buttonlike:last-child {
+        margin-right: 100px;
     }
 
     .h1 {
@@ -71,16 +76,35 @@
         align-items: center;
     }
 
-    .flex-button{
+    .flex-button {
         display: flex;
-        width:100%;
+        width: 100%;
         justify-content: flex-end;
         margin-top: 50px;
     }
 
-    .title{
+    .title {
         margin-top: 5%;
         margin-left: 5%;
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        body {
+            background-size: auto;
+        }
+
+        .buttonlike:last-child {
+            margin-right: 0px;
+        }
+
+        .flex-button {
+            justify-content: space-between;
+        }
+
+        .flex-container {
+            width: 295px;
+        }
     }
 </style>
 
@@ -89,62 +113,48 @@
 
     <h1 class="title">I arrive in Aarhus on 25.12.2022</h1>
     <div class="flex-button">
-        <button class="button"> Change destination </button>
-        <button class="button"> Change date </button>
+
+        <a class="buttonlike" href="./errorPage.html">
+            <p> Change destination</p>
+        </a>
+        <a class="buttonlike" href="./errorPage.html">
+            <p>Change date</p>
+        </a>
+
     </div>
     <div class="center">
         <div class="flex-container">
-            <div class="flex-item">
+            <a href="errorPage.html" class="flex-item">
                 <p class="name">Share your travel plan</p>
                 <img src="images/send.png">
-            </div>
-            <div class="flex-item">
+
+
+            </a>
+            <a href="Places to visit.html" class="flex-item">
                 <p class="name">Places to<br> visit</p>
                 <img src="images/tourism.png">
-            </div>
-            <div class="flex-item">
+            </a>
+            <a href="Tips and tricks.html" class="flex-item">
                 <p class="name">Tips and<br> tricks</p>
                 <img src="images/lightbulb.png">
-            </div>
-            <div class="flex-item">
+            </a>
+            <a href="errorPage.html" class="flex-item">
                 <p class="name">Cultural awareness</p>
-                <img src="images/self-awareness.png">
-            </div>
 
-            <div class="flex-item">
+                <img src="images/self-awareness.png">
+            </a>
+
+            <a href="errorPage.html" class="flex-item">
                 <p class="name">Contact other solo travelers</p>
                 <img src="images/partnership.png">
-            </div>
+            </a>
 
-            <div class="flex-item">
+            <a href="overviewoftheCity.html" class="flex-item">
                 <p class="name">Overview of the city</p>
                 <img src="images/search-interface-symbol.png">
-            </div>
+            </a>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
